@@ -7,8 +7,19 @@
     <title>Jogo Mata Mosquito</title>
     <script src="jogo.js"></script>
   </head>
-  <body onresize="ajustaTamanhoPalcoJogo()"></body>
+  <body onresize="ajustaTamanhoPalcoJogo()">
+    <div class="painel">
+      <div class="vides"></div>
+      <img id="v1" src="imagens/coracao_cheio.png" />
+      <img id="v2" src="imagens/coracao_cheio.png" />
+      <img id="v3" src="imagens/coracao_cheio.png" />
+
+      <div class="cronometro">Tempo restante: ?</div>
+    </div>
+  </body>
   <script>
-    posicaoRandomica();
+    setInterval(function () {
+      posicaoRandomica();
+    }, 1000);
   </script>
 </html>
